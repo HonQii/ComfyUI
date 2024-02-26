@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "comfyui"
+version = "0.1.0"
+description = "ComfyUI project"
+authors = ["HonQii <honqi3014@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "^2.2.1"
+torchvision = "^0.17.1"
+torchaudio = "^2.2.1"
+torchsde = "^0.2.6"
+einops = "^0.7.0"
+transformers = ">=4.25.1"
+safetensors = ">=0.3.0"
+aiohttp = "^3.9.3"
+pyyaml = "^6.0.1"
+pillow = "^10.2.0"
+scipy = "^1.12.0"
+tqdm = "^4.66.2"
+psutil = "^5.9.8"
+
+
+[[tool.poetry.source]]
+name = "default"
+url = "https://pypi.org/simple"
+
+[[tool.poetry.source]]
+name = "pytorch-nightly"
+url = "https://download.pytorch.org/whl/nightly/cpu"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
